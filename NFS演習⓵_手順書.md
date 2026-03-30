@@ -113,7 +113,7 @@ sudo dnf install -y nfs-utils
 ### 7-1. 共有ディレクトリを作成
 
 ```bash
-sudo mkdir -p /share
+sudo mkdir /share
 sudo chmod 777 /share
 ```
 
@@ -148,7 +148,7 @@ sudo vi /etc/exports
 ### 7-3. 設定を反映
 
 ```bash
-sudo exportfs -rav
+sudo exportfs -a
 ```
 
 ### 7-4. NFSサーバを起動
@@ -171,7 +171,7 @@ sudo exportfs -v
 ### 8-1. マウントポイント作成
 
 ```bash
-sudo mkdir -p /yakiniku
+sudo mkdir /yakiniku
 ```
 
 ### 8-2. `/etc/fstab` を編集
